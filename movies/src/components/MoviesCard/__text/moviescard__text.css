@@ -1,0 +1,14 @@
+.moviescard__text {
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .moviescard__text {
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+}

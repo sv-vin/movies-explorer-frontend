@@ -1,0 +1,17 @@
+.formauthentication__signin-paragraph {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A0A0A0;
+}
+
+@media screen and (max-width: 320px) {
+    .formauthentication__signin-paragraph {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

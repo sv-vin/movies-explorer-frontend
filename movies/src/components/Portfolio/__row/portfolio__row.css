@@ -1,0 +1,13 @@
+.portfolio__row {
+    width: 100%;
+    min-height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #424242;
+    margin-right: 70px;
+}
+
+.portfolio__row:last-child {
+    border: 0;
+}

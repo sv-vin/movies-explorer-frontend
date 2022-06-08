@@ -1,0 +1,5 @@
+@media screen and (max-width: 550px) {
+    .aboutme__text {
+        align-self: stretch;
+    }
+}

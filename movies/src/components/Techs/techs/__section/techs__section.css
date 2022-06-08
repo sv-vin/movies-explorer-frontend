@@ -1,0 +1,10 @@
+.techs__section {
+    max-width: 100%;
+    background-color: #272727;
+}
+
+@media screen and (max-width: 320px) {
+    .techs__section {
+        margin-bottom: 0;
+    }
+}

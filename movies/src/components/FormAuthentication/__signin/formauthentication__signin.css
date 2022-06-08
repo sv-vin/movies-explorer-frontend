@@ -1,0 +1,13 @@
+.formauthentication__signin {
+    max-width: 396px;
+    margin: 0 auto 70px;
+    text-align: center;
+    /* margin: 0 auto 232px; */
+}
+
+@media screen and (max-width: 320px) {
+    .formauthentication__signin {
+        max-width: 260px;
+        margin: 0 auto 30px;
+    }
+}

@@ -1,0 +1,14 @@
+.filtercheckbox__input:checked+.filtercheckbox__slider {
+    background-color: #2BE080;
+    box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
+}
+
+.filtercheckbox__input:checked+.filtercheckbox__slider:before {
+    background-color: #FFFFFF;
+}
+
+.filtercheckbox__input:checked+.filtercheckbox__slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+}

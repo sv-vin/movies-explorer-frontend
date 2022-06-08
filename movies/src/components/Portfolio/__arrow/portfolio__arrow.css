@@ -1,0 +1,17 @@
+.portfolio__arrow {
+    margin-right: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    width: 30px;
+    height: 60px;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 320px) {
+    .portfolio__arrow {
+        width: 18px;
+        height: 28px;
+    }
+}

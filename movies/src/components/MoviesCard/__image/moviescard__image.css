@@ -1,0 +1,13 @@
+.moviescard__image {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    height: 203px;
+}
+
+@media screen and (max-width: 564px) {
+    .moviescard__image {
+        width: 100%;
+        height: 168px;
+    }
+}

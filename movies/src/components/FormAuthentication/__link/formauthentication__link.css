@@ -1,0 +1,11 @@
+.formauthentication__link {
+    color: #4285F4;
+    margin-left: 6px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 456px) {
+    .formauthentication__link {
+        margin-left: 7px;
+    }
+}

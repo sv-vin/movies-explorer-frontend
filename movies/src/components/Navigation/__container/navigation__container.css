@@ -1,0 +1,11 @@
+.navigation__container {
+    display: block;
+    background-color: #202020;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation__container {
+        display: none;
+    }
+}

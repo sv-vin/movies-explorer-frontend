@@ -1,0 +1,27 @@
+.aboutme__social {
+    margin-right: 20px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity .4s linear, text-decoration .4s linear;
+}
+
+.aboutme__social:last-child {
+    margin: 0;
+}
+
+.aboutme__social:hover {
+    text-decoration: underline;
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 320px) {
+    .aboutme__social {
+        margin-right: 26px;
+    }
+}
