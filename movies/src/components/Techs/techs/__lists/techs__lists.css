@@ -1,5 +1,4 @@
 .techs__lists {
-    width: 100%;
     margin: 0;
     padding: 0 0 100px;
     display: grid;
@@ -12,15 +11,14 @@
 
 @media screen and (max-width: 768px) {
     .techs__lists {
-        padding: 0;
+        padding: 0 60px 90px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .techs__lists {
-        gap: 10px 10px;
+        gap: 10px;
+        margin: 0 65px;
         padding: 0 0 70px;
-        max-width: 178px;
-        grid-template-columns: 1fr 1fr;
     }
 }

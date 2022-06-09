@@ -1,7 +1,7 @@
 .searchform__input {
     width: 100%;
     height: 72px;
-    padding: 25px;
+    padding: 0 25px;
     font-family: 'Inter', 'Arial', sans-serif;
     font-style: normal;
     color: #8B8B8B;
@@ -17,14 +17,14 @@
 .searchform__input:focus,
 .searchform__input:focus-visible,
 .searchform__input:active {
-    padding: 25px;
+    padding: 0 25px;
     outline: none;
     border: 1px solid #AAAAAA;
 }
 
 @media screen and (max-width: 564px) {
     .searchform__input {
-        padding: 12px;
+        padding: 0 12px;
         height: 56px;
         font-size: 16px;
         line-height: 16px;

@@ -30,7 +30,6 @@
 
 @media screen and (max-width: 550px) {
     .moviescard__saved {
-        width: 0;
-        height: 30px;
+        min-width: 30px;
     }
 }
