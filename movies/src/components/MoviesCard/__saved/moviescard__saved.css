@@ -1,4 +1,5 @@
 .moviescard__saved {
+    min-width: 30px;
     width: 30px;
     height: 30px;
     padding: 0;
@@ -26,10 +27,4 @@
 .moviescard__saved:active {
     background-image: url('../../../images/savedactive.svg');
     background-color: #3DDC84;
-}
-
-@media screen and (max-width: 550px) {
-    .moviescard__saved {
-        min-width: 30px;
-    }
 }

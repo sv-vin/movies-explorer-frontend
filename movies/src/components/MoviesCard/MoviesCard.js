@@ -15,7 +15,7 @@ function MoviesCard(props) {
             <img className="moviescard__image" src={props.image} alt={props.title} />
 
         </article>
-    );
+    ); 
 }
 
 export default MoviesCard;
