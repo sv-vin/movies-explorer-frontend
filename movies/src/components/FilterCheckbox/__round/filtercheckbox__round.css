@@ -1,0 +1,7 @@
+.filtercheckbox__slider.filtercheckbox__round {
+    border-radius: 16px;
+}
+
+.filtercheckbox__slider.filtercheckbox__round:before {
+    border-radius: 50%;
+}

@@ -1,0 +1,28 @@
+.moviescard__cross {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    margin-right: 14px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #313131;
+    background-image: url('../../../images/crossB.svg');
+    background-repeat: no-repeat;
+    background-size: 10px 13px;
+    background-position: 52% 55%;
+    border-radius: 36px;
+    transition: box-shadow .2s linear, background-image .2s linear;
+    cursor: pointer;
+}
+
+.moviescard__text:hover .movies-card__cross {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.moviescard__cross:hover {
+    cursor: pointer;
+    background-image: url('../../../images/crossB.svg');
+}

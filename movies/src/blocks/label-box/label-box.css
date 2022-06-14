@@ -1,0 +1,5 @@
+.label-box {
+    min-height: 266px;
+    display: flex;
+    flex-direction: column;
+}

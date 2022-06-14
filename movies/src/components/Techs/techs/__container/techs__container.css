@@ -1,0 +1,16 @@
+.techs__container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .techs__container {
+        margin-bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .techs__container {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,23 @@
+.navigation__btn-icon-profile {
+    display: flex;
+    padding-left: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-radius: 7px;
+    transition: color .3s linear, background-color .3s linear;
+}
+
+.navigation__btn-icon-profile:hover {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color .3s linear, font-size .3s linear;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation__btn-icon-profile {
+        margin-top: auto;
+    }
+}

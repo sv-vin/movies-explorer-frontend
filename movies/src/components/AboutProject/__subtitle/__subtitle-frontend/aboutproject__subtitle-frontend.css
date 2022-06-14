@@ -1,0 +1,11 @@
+.aboutproject__subtitle-frontend {
+    padding: 9px;
+    background-color: #303030;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 320px) {
+    .aboutproject__subtitle-frontend {
+        padding: 11px;
+    }
+}

@@ -1,0 +1,23 @@
+.promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 560px;
+    max-width: 100%;
+    background-color: #073042;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .promo {
+        justify-content: center;
+        height: 844px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .promo {
+        height: 630px;
+    }
+}

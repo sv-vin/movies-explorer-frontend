@@ -1,0 +1,31 @@
+.searchform__btn {
+    width: 100px;
+    height: 52px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: box-shadow .4s linear;
+    background: #4285F4;
+}
+
+.searchform__btn:hover {
+    box-shadow: 0px 0px 22px #4285F4;
+
+}
+
+@media screen and (max-width: 564px) {
+    .searchform__btn {
+        margin: 0 0 9px;
+        width: 80px;
+        height: 44px;
+        top: 6px;
+        right: 6px;
+        bottom: 6px;
+
+    }
+}

@@ -1,0 +1,72 @@
+.navigation__btn-save {
+    position: relative;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    transition: font-weight .3s linear;
+    color: #FFFFFF;
+}
+
+.navigation__btn-save:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    color: #fff;
+    transition: width 0.5s;
+}
+
+.navigation__btn-save:hover:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    color: #fff;
+    transition: width 0.5s;
+}
+
+.navigation__btn-save:hover {
+    font-weight: 500;
+    color: #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color .3s linear, font-size .3s linear;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation__btn-save {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .navigation__btn-save:hover {
+        font-weight: 600;
+    }
+
+    .navigation__btn-save:after {
+        bottom: -4px;
+    }
+
+    .navigation__btn-save:hover:after {
+        bottom: -4px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navigation__btn-save:after {
+        bottom: -7px;
+    }
+
+    .navigation__btn-save:hover:after {
+        bottom: -7px;
+    }
+}

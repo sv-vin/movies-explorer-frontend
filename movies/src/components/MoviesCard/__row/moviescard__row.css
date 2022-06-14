@@ -1,0 +1,24 @@
+.moviescard__row {
+    width: 280px;
+    height: 40px;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .moviescard__row {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .moviescard__row {
+        margin-bottom: 14px;
+        margin-right: 22px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
