@@ -118,6 +118,7 @@
 @import url(./components/MoviesCardList/MoviesCardList.css);
 @import url(./components/MoviesCardList/__container/moviescardlist__container.css);
 @import url(./components/MoviesCardList/__btn/moviescardlist__btn.css);
+@import url(./components/MoviesCardList/moviesnotfound/moviesnotfound.css);
 
 /* MoviesCard */
 @import url(./components/MoviesCard/MoviesCard.css);
@@ -140,7 +141,7 @@
 @import url(./components/FormAuthentication/__signin/formauthentication__signin-paragraph.css);
 @import url(./components/FormAuthentication/__link/formauthentication__link.css);
 @import url(./components/FormAuthentication/__label/formauthentication__label.css);
-@import url(./components/FormAuthentication/__error/formauthentication__error.css);
+/* @import url(./components/FormAuthentication/__error/formauthentication__error.css); */
 
 /* Preloader */
 @import url(./components/Preloader/Preloader.css);
@@ -161,3 +162,19 @@
 @import url(./components/Error/__title/error__title.css);
 @import url(./components/Error/__paragraph/error__paragraph.css);
 @import url(./components/Error/__link/error__link.css);
+
+/* errorform */
+@import url(./blocks/error-form/error-form.css);
+@import url(./blocks/error-form/__search/error-form__search.css);
+@import url(./blocks/error-form/_margin/error-form_margin.css);
+@import url(./blocks/error-form/__profile/error-form__profile.css);
+
+/* PopupTooltip */
+@import url(./components/InfoTooltip/popup/popup.css);
+@import url(./components/InfoTooltip/popup/_transition/popup_transition.css);
+@import url(./components/InfoTooltip/popup/_opened/popup_opened.css);
+@import url(./components/InfoTooltip/popup/__container/popup__container.css);
+@import url(./components/InfoTooltip/popup/__close-btn/popup__close-btn.css);
+@import url(./components/InfoTooltip/popup/__text/popup__text.css);
+@import url(./components/InfoTooltip/popup/__image/popup__image.css);
+@import url(./components/InfoTooltip/popup/__content/popup__content.css);

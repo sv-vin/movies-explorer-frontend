@@ -1,41 +1,41 @@
 .profile__btn {
-    border: none;
-    padding: 0;
-    margin: 0;
-    background-color: inherit;
-    font-family: 'Inter', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
-    text-align: center;
-    color: #FFFFFF;
-    width: fit-content;
-    align-self: center;
-    transition: box-shadow .3s linear;
-    margin-top: 200px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  width: fit-content;
+  align-self: center;
+  transition: box-shadow .3s linear;
+  margin-top: 200px;
 }
 
 .profile__btn:hover {
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 20px;
-    transition: color .3s linear, font-size .3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color .3s linear, font-size .3s linear;
 }
 
 .profile__btn:active {
-    transform: translateY(3px);
-    filter: saturate(150%);
+  transform: translateY(3px);
+  filter: saturate(150%);
 }
 
 @media screen and (max-width: 768px) {
-    .profile__btn {
-        margin: 190px 0 0 0;
-    }
+  .profile__btn {
+    margin: 190px 0 0 0;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .profile__btn {
-        margin: 360px 0 0 0;
-    }
+  .profile__btn {
+    margin: 360px 0 0 0;
+  }
 }
