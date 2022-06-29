@@ -18,13 +18,14 @@ function MoviesCard(props) {
     setSaved();
   }, [setSaved]);
 
-  const movieButtonSaveClassName = `moviescard__saved ${isCardSaveClicked ? "moviescard__saved_active" : ""
+  const movieButtonSaveClassName = `moviescard__saved ${
+    isCardSaveClicked ? "moviescard__saved_active" : ""
     }`;
 
   const movieButtonDeleteClassName = `moviescard__cross`;
   function handleSaveClick(evt) {
     evt.stopPropagation();
-    if (!isCardSaveClicked) {
+    if (!isCardSaveClicked)  { 
       props.onSaveMovie({
         country: props.country || "default",
         director: props.director,
@@ -43,16 +44,19 @@ function MoviesCard(props) {
           : "https://www.youtube.com",
         owner: props.owner,
       });
-      setIsCardSaveClicked(true);
-    } else {
+     
+      // setIsCardSaveClicked(true);
+    } 
+    else {
       const saveCard = props.saveMovies.find(
         (movie) => movie.movieId === props.id
       );
       props.handleDeleteSaveMovie(saveCard);
       setIsCardSaveClicked(false);
+      setIsCardSaveClicked(true);
     }
   }
-
+ 
   function handleDeleteClick(evt) {
     props.handleDeleteSaveMovie(props);
   }
@@ -67,20 +71,14 @@ function MoviesCard(props) {
   };
   return (
     <article className="moviescard">
-      <a
-        className={style}
-        href={props.trailerLink}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-      </a>
+      
       <div className="moviescard__text">
         <div className="moviescard__row">
           <h2 className="moviescard__title">{props.nameRU}</h2>
           <p className="moviescard__time">{getTimeFromMins(props.duration)}</p>
         </div>
         <button
-          className={
+           className={
             props.pathSavedMovies
               ? movieButtonDeleteClassName
               : movieButtonSaveClassName
@@ -91,6 +89,10 @@ function MoviesCard(props) {
           }
         ></button>
       </div>
+      <a className={style}
+        href={props.trailerLink}
+        target="_blank"
+        rel="noopener noreferrer">
       <img
         className="moviescard__image"
         src={
@@ -100,6 +102,7 @@ function MoviesCard(props) {
         }
         alt={props.nameRU}
       />
+      </a>
     </article>
   );
 }

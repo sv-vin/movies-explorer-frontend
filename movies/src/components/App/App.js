@@ -123,6 +123,8 @@ function App() {
     setIsFiltered(JSON.parse(localStorage.getItem("isFiltered")));
   }, []);
 
+  
+
   // обновляем кароткометражки
   useEffect(() => {
     setShortMovies(JSON.parse(localStorage.getItem("durationMovieShort")));
@@ -160,28 +162,27 @@ function App() {
         JSON.parse(window.localStorage.getItem("moviesSearchValue"))
       );
     }, 450);
+    setLoggedIn(true);
+  }
+  
+  // сохраняем фильм
+  const handleSaveMovie = (movie) => {
+    if (!saveMovies.some(saveMovie => saveMovie.movieId === movie.movieId)) {
+      mainApi.saveMovie(movie)
+      .then ((savedMovie) => {
+        setSaveMovies([...saveMovies, savedMovie]);
+        movie._id = savedMovie._id;
+      })
+        .catch((err) => {
+          console.log(err);
+          handleInfoTooltip({
+            union: unionFalse,
+            text: "Ошибка сохранения фильма",
+          });
+        });
+    }
   }
 
-  // сохраняем фильм
-  function handleSaveMovie(movieData) {
-    setSaveMovies([...saveMovies, movieData]);
-    mainApi
-      .saveMovie(movieData)
-      .then((newMovie) => {
-        setSaveMovies([...saveMovies, newMovie]);
-        localStorage.setItem(
-          "saveMovies",
-          JSON.stringify([...saveMovies, newMovie])
-        );
-      })
-      .catch((err) => {
-        console.log(err);
-        handleInfoTooltip({
-          union: unionFalse,
-          text: "Ошибка сохранения фильма",
-        });
-      });
-  }
 
   // ищем сохраненный фильм
   function handleSearchSaveMovie(search) {
@@ -265,7 +266,7 @@ function App() {
             union: unionTrue,
             text: "Вы успешно вошли!",
           });
-          history.push("/movies");
+          history.push("/movies")
         }
       })
       .then(() => {
@@ -362,16 +363,19 @@ function App() {
     }, 450);
     setCheckedSaveFilms(!checkedSaveFilms);
   }
-
+ 
   // выход
   function handleSignOut() {
+    localStorage.clear();
     setLoggedIn(false);
     setCurrentUser([]);
     setCheckedFilms(false);
     setCheckedSaveFilms(false);
-    localStorage.clear();
+    setIsFiltered(false);
+    setMoviesFilter(false);
+    setValueSearch("");
     history.push("/");
-  }
+  } 
 
   if (!permissonCheck) {
     return null;

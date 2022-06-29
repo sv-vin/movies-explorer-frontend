@@ -5,6 +5,7 @@ import FilterCheckbox from "../FilterCheckbox/FilterCheckbox";
 function SearchForm(props) {
   const [searchFilmValue, setSearchFilmValue] = useState(
     props.valueSearch || ""
+  
   );
   const [searchFilmError, setSearchFilmError] = useState(
     "Нужно ввести ключевое слово"
@@ -21,12 +22,14 @@ function SearchForm(props) {
       setSearchFilmError("Нужно ввести ключевое слово");
     } else {
       setSearchFilmError("");
-    }
-  }
+    } 
+  } 
 
+ 
   function handleEnter(event) {
     event.preventDefault();
     props.enterHandler(searchFilmValue);
+
   }
 
   function blurHandler(e) {
@@ -52,8 +55,6 @@ function SearchForm(props) {
           type="text"
           id="movie"
           name="searchmovie"
-          minLength="2"
-          maxLength="40"
           onChange={handleChangeSearchFilm}
           onKeyUp={searchFilmValue ? null : handleEnter}
           onBlur={blurHandler}

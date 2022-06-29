@@ -75,7 +75,7 @@ function MoviesCardList(props) {
               );
             })}
 
-        {(pathMovies && props.movies && props.movies.length === 0) ||
+        {(pathMovies  && props.movies && props.movies.length === 0) ||
           (pathSavedMovies &&
             props.saveMovies &&
             props.saveMovies.length === 0) ? (

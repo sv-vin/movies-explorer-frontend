@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 768px) {
   .moviescard__title {
-    max-width: 260px;
+    max-width: 150px;
     font-size: 15px;
     line-height: 18px;
   }

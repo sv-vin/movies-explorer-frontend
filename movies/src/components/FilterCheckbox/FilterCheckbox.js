@@ -17,4 +17,4 @@ function FilterCheckbox(props) {
   );
 }
 
-export default FilterCheckbox;
+export default FilterCheckbox; 
