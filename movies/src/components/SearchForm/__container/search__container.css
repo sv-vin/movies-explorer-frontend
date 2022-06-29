@@ -1,4 +1,6 @@
 .search__container {
+    display: flex;
+    flex-direction: column;
     margin: 65px 70px 48px;
 }
 

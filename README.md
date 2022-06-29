@@ -1,6 +1,7 @@
 # movies-explorer-frontend
 макет https://www.figma.com/file/deSFgQ0hslwH1hfrHPwSrS/?node-id=891%3A3857
 `http://domainname.diplon.nomoredomains.xyz` — фронтенд
+`http://api.domainname.diplon.nomoredomains.xyz` — бэкенд
 
 
 ## Публичный IP-адрес

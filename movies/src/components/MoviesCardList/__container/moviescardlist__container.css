@@ -19,8 +19,6 @@
         padding: 0 30px;
         gap: 36px 30px;
         grid-template-columns: repeat(auto-fit, minmax(237px, 1fr));
-        max-height: 1150px;
-        overflow: hidden;
         margin-bottom: 65px;
     }
 }

@@ -1,23 +1,23 @@
 .searchform {
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0;
-    position: relative;
-    background-color: #202020;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
+  background-color: #202020;
 }
 
 @media screen and (max-width: 768px) {
-    .searchform {
-        margin-bottom: 25px;
-    }
+  .searchform {
+    margin-bottom: 25px;
+  }
 
 }
 
 @media screen and (max-width: 320px) {
-    .searchform {
-        margin-bottom: 30px;
-    }
+  .searchform {
+    margin-bottom: 30px;
+  }
 
 }

@@ -1,4 +1,4 @@
-.formauthentication__input{
+.formauthentication__input {
     border: none;
     max-width: 100%;
     padding: 15px;
@@ -12,10 +12,10 @@
     background-color: #2F2F2F;
     border-radius: 8px;
 }
-    
+
 .formauthentication__input:focus,
 .formauthentication__input:focus-visible,
 .formauthentication__input:active {
     outline: 1px solid #453737;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
 }
